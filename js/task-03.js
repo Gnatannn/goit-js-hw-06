@@ -14,11 +14,13 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
+gallery.style.display = "grid";
+gallery.style.gridTemplateColumns = "1fr 1fr 1fr";
 // console.log(gallery);
 const galleryItems = images.map(
   (image) =>
-    `<li list-style='none'><img src=${image.url} alt=${image.alt} class="img"></img></li>`
+    `<li list-style='none'><img height="200px"src=${image.url} alt=${image.alt} class="img"></img></li>`
 );
-console.log(galleryItems);
+// console.log(galleryItems);
 
 gallery.insertAdjacentHTML("afterbegin", galleryItems.join(""));
