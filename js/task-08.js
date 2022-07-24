@@ -13,7 +13,9 @@ const handleSubmit = (event) => {
   };
 
   if (emailValue === "" || passwordValue === "") {
-    window.alert("Please fill the form!");
+    window.alert(
+      "Please fill the form right now! Otherwise I'll call your mom!"
+    );
   } else {
     console.log(user);
     refs.form.reset();
