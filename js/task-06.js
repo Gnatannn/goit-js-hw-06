@@ -3,7 +3,6 @@ const textInput = document.querySelector("#validation-input");
 // console.log(textInput.dataset.length);
 
 textInput.addEventListener("blur", (event) => {
-  event.preventDefault();
   textInput.classList.remove("invalid", "valid");
   //   console.log(event.currentTarget.value.length);
   //   console.log(Number(textInput.getAttribute(["data-length"])));
