@@ -11,10 +11,9 @@ const refs = {
 };
 
 refs.createBtn.addEventListener("click", () => {
-  const inputNumber = Number(refs.input.value);
-  console.log(inputNumber);
-  createBoxes(inputNumber);
-  refs.input.value = "";
+  // const inputNumber = Number(refs.input.value);
+  // console.log(inputNumber);
+  createBoxes(Number(refs.input.value));
 });
 refs.destroyBtn.addEventListener("click", destroyBoxes);
 
@@ -34,4 +33,5 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   refs.boxes.innerHTML = "";
+  refs.input.value = "";
 }
